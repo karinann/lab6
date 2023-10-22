@@ -25,14 +25,6 @@ while True:
 
     while True:
         if menu_option == 1:
-            passcode = str(input("Please enter your password to encode: "))
-            stored = encode(passcode)
-            print("Your password has been encoded and stored!")
-
-    menu_option = int(input("\nPlease enter an option: "))
-
-    while True:
-        if menu_option == 1:
             passcode = str(input("\nEnter password to encode: "))
             stored = encode(passcode)
             print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
