@@ -1,4 +1,4 @@
-# lab 6 encoder
+# lab 6 encoder Karina Ann
 
 def encode(password):
     # create list out of string passcode
