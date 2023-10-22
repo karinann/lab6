@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# lab 6 encoder
-=======
 # lab 6 encoder Karina Ann
->>>>>>> f2f3a6804d62e5e135fe7bf3f948af3d82a810b1
 
 def encode(password):
     # create list out of string passcode
@@ -24,7 +20,7 @@ def encode(password):
 
 while True:
     print("Encoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
-<<<<<<< HEAD
+
     menu_option = int(input("\nPlease enter an option: "))
 
     while True:
@@ -32,20 +28,15 @@ while True:
             passcode = str(input("Please enter your password to encode: "))
             stored = encode(passcode)
             print("Your password has been encoded and stored!")
-=======
-    menu_option = int(input("\nSelect a Menu Option: "))
+
+    menu_option = int(input("\nPlease enter an option: "))
 
     while True:
         if menu_option == 1:
             passcode = str(input("\nEnter password to encode: "))
             stored = encode(passcode)
->>>>>>> f2f3a6804d62e5e135fe7bf3f948af3d82a810b1
             print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
-            menu_option = int(input("\nSelect a Menu Option: "))
+            menu_option = int(input("\nPlease enter an option: "))
 
         if menu_option == 3:
-<<<<<<< HEAD
-=======
-            print("Goodbye!")
->>>>>>> f2f3a6804d62e5e135fe7bf3f948af3d82a810b1
             quit()
