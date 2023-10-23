@@ -28,11 +28,10 @@ def decode(encoded):  # Michael Amiot
     return f'The encoded password is {encoded}, and the original password is {decoded}'
 
 
-print("Encoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
-menu_option = int(input("\nSelect a Menu Option: "))
-
-
 if __name__ == '__main__':
+
+    print("Encoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
+    menu_option = int(input("\nSelect a Menu Option: "))
 
     while True:
         if menu_option == 1:
