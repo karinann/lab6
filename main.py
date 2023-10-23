@@ -31,21 +31,24 @@ def decode(encoded):  # Michael Amiot
 print("Encoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
 menu_option = int(input("\nSelect a Menu Option: "))
 
-while True:
-    if menu_option == 1:
-        passcode = str(input("\nEnter password to encode: "))
-        print(f'Your password has been encoded and stored!')
-        stored = encode(passcode)
-        print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
-        menu_option = int(input("\nSelect a Menu Option: "))
-        print()
 
-    if menu_option == 2:  # Michael Amiot Decode option
-        print(decode(stored))
-        print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
-        menu_option = int(input("\nSelect a Menu Option: "))
-        print()
+if __name__ == '__main__':
 
-    if menu_option == 3:
-        print("Goodbye!")
-        quit()
+    while True:
+        if menu_option == 1:
+            passcode = str(input("\nEnter password to encode: "))
+            print(f'Your password has been encoded and stored!')
+            stored = encode(passcode)
+            print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
+            menu_option = int(input("\nSelect a Menu Option: "))
+            print()
+
+        if menu_option == 2:  # Michael Amiot Decode option
+            print(decode(stored))
+            print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
+            menu_option = int(input("\nSelect a Menu Option: "))
+            print()
+
+        if menu_option == 3:
+            print("Goodbye!")
+            quit()
