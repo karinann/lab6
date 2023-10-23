@@ -18,7 +18,7 @@ def encode(password):
     return final
 
 
-def decode(encoded):
+def decode(encoded):  # Michael Amiot
     final = ''
     password_list = list(encoded)
     # iterate through each item in password_list and subtract 3
