@@ -41,6 +41,7 @@ menu_option = int(input("\nSelect a Menu Option: "))
 while True:
     if menu_option == 1:
         passcode = str(input("\nEnter password to encode: "))
+        print(f'Your password has been encoded and stored!')
         stored = encode(passcode)
         print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
         menu_option = int(input("\nSelect a Menu Option: "))
