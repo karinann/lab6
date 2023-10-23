@@ -32,7 +32,7 @@ def decode(encoded):
     for index, item in enumerate(password_list):
         final = final + str(password_list[index])
 
-    return f'The encoded password is {stored}, and the original password is {final}.'
+    return final
 
 
 print("Encoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
@@ -44,7 +44,13 @@ while True:
         stored = encode(passcode)
         print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
         menu_option = int(input("\nSelect a Menu Option: "))
-        print(decode(stored))
+        print()
+
+    if menu_option == 2:
+        print(f'The encoded password is {stored}, and the original password is {decode(stored)}')
+        print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
+        menu_option = int(input("\nSelect a Menu Option: "))
+        print()
 
     if menu_option == 3:
         print("Goodbye!")
