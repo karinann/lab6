@@ -40,7 +40,7 @@ while True:
         menu_option = int(input("\nSelect a Menu Option: "))
         print()
 
-    if menu_option == 2:
+    if menu_option == 2: # Michael Amiot Decode option
         print(f'The encoded password is {stored}, and the original password is {decode(stored)}')
         print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
         menu_option = int(input("\nSelect a Menu Option: "))
