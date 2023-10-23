@@ -18,17 +18,34 @@ def encode(password):
     return final
 
 
+def decode(encoded):
+    password_list = list(encoded)
+
+    # iterate through each item in list and subtract 3
+    for index, item in enumerate(password_list):
+        password_list[index] = int(item) - 3
+
+    # turn password_list back into a string using final
+    final = ''
+
+    # iterate though each item in list and turn into string
+    for index, item in enumerate(password_list):
+        final = final + str(password_list[index])
+
+    return f'The encoded password is {stored}, and the original password is {final}.'
+
+
+print("Encoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
+menu_option = int(input("\nSelect a Menu Option: "))
+
 while True:
-    print("Encoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
-    menu_option = int(input("\nSelect a Menu Option: "))
+    if menu_option == 1:
+        passcode = str(input("\nEnter password to encode: "))
+        stored = encode(passcode)
+        print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
+        menu_option = int(input("\nSelect a Menu Option: "))
+        print(decode(stored))
 
-    while True:
-        if menu_option == 1:
-            passcode = str(input("\nEnter password to encode: "))
-            stored = encode(passcode)
-            print("\nEncoder/Decoder Menu\n--------\n1. Encode\n2. Decode\n3. Quit")
-            menu_option = int(input("\nSelect a Menu Option: "))
-
-        if menu_option == 3:
-            print("Goodbye!")
-            quit()
+    if menu_option == 3:
+        print("Goodbye!")
+        quit()
