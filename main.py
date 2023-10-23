@@ -21,7 +21,7 @@ def encode(password):
 def decode(encoded):
     final = ''
     password_list = list(encoded)
-    # iterate through each item in list and subtract 3
+    # iterate through each item in password_list and subtract 3
     for index, item in enumerate(password_list):
         password_list[index] = int(item) - 3
         final = final + str(password_list[index])
